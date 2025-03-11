@@ -1,0 +1,108 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    padding: 100px 120px;
+}
+.contact h1{
+    font-size: 70px;
+    color: #404040;
+    margin-bottom: 130px;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #666;
+}
+.input-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.input-container input{
+    margin: 5px 0;
+    min-height: 35px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #cccccc;
+    color: #666;
+    width: 100%;
+    padding: 0 10px;
+}
+.input-container input:focus{
+    border-color: #01af8d;
+    box-shadow: 0 0 2px #01af8d;
+}
+.input-container > div{
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+}
+.text-area-container{
+    display: flex;
+    flex-direction: column;
+}
+.text-area-container textarea{
+    margin: 5px 0;
+    min-height: 200px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #cccccc;
+    color: #666;
+    width: 100%;
+    resize: vertical;
+    padding: 10px 10px;
+}
+.text-area-container textarea:focus{
+    border-color: #01af8d;
+    box-shadow: 0 0 2px #01af8d;
+}
+.btn-container button{
+    margin-top: 50px;
+    background-color: #01af8d;
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    padding: 10px 60px;
+    cursor: pointer;
+}
+@media (max-width: 1024px){
+    .contact h1{
+        font-size: 40px;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 100px 10px;
+    }
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .input-container > div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .input-container input{
+        align-self: center;
+        width: 90%;
+    }
+    .contact label{
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .text-area-container textarea{
+        width: 90%;
+        align-self: center;
+    }
+}

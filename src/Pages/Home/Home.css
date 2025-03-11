@@ -1,0 +1,134 @@
+.home {
+    background-color: rgb(233, 233, 231);
+    position: relative;
+    top: -100px;
+    padding-top: 100px;
+}
+
+.slide-container {
+    height: 430px;
+    background-color: rgb(233, 233, 231);
+    display: flex;
+}
+
+.slide-container>div:nth-child(1) {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.slide-container>div:nth-child(1) h1 {
+    font-size: 50px;
+    width: 70%;
+    text-align: center;
+    margin: 30px;
+    line-height: 90px;
+}
+
+.slide-container>div:nth-child(1) p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 30px;
+}
+
+.slide-container>div:nth-child(2) {
+    flex: 11;
+}
+
+div.water-img {
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    padding: 40px;
+}
+
+.products {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.products h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.products>div {
+    display: flex;
+    justify-content: center;
+}
+
+.products>div> div>img {
+    margin: 15px;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+.products>div> div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+}
+
+.usage {
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.usage h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.usage>img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+.usage>div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media (max-width: 1024px){
+    .slide-container>div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+    }
+    .slide-container>div:nth-child(2) img {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .slide-container {
+        background-color: rgb(233, 233, 231);
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    div.water-img img {
+        width: 100%;
+    }
+    .products>div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .usage>div {
+        width: 100%;
+        flex-direction: column;
+    }
+    .usage> div> img {
+        margin-bottom: 20px;
+    }
+
+}

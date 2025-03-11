@@ -1,0 +1,149 @@
+header{
+    transition: padding ease 0.3s;
+    z-index: 100;
+}
+.header {
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.sticky-header {
+    top: 0;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 120px;
+    padding-top: 3px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 .1px 2px #808080;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.logo a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #1E73BE;
+    font-weight: 800;
+}
+
+.logo p {
+    color: #DD3333;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #404040;
+    font-weight: 700;
+    margin: 0 20px;
+}
+
+.navbar a:hover {
+    color: #01af8d;
+}
+.menu-icon{
+    width: 40px;
+    padding: 5px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 100;
+}
+.menu-icon span{
+    display: block;
+    margin: 5px 0;
+    background-color: black;
+    height: 4px;
+    width: 28px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.menu-icon-active{
+    width: 40px;
+    padding: 5px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 100;
+}
+.menu-icon-active span{
+    position: fixed;
+    display: block;
+    margin: 5px 0;
+    background-color: black;
+    height: 4px;
+    width: 32px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.menu-icon-active span:nth-child(1){
+    transform: rotate(-45deg);
+}
+.menu-icon-active span:nth-child(2){
+display: none;
+}
+.menu-icon-active span:nth-child(3){
+    transform: rotate(45deg);
+}
+
+
+.search {
+    font-family: 'Linearicons-Free';
+    font-size: 1.6rem;
+    margin: 0 60px;
+}
+@media (max-width: 1024px){
+    .header {
+        align-items: start;
+        padding: 15px 10px;
+        justify-content: start;
+        margin-right: 30px;
+    }
+    .logo {
+        margin-right: 0;
+        width:  150px;
+    }
+    .logo p {
+        font-size: 11px;
+    }
+    .navbar {
+        flex-direction: column;
+        position: fixed;
+        justify-content: space-around;
+        background-color: white;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding-right: 50px;
+        padding-bottom: 180px;
+        padding-top: 30px;
+    }
+    .navbar a {
+        font-size: 20px;
+        display: inline;
+    }
+
+}

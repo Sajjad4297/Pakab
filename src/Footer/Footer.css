@@ -1,0 +1,159 @@
+.main-footer {
+    background: url('../assets/images/Water_wave.png');
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+    height: 520px;
+    padding: 80px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-footer>div {
+    display: flex;
+    flex-direction: column;
+}
+.top-footer div:nth-child(2) {
+    margin-right: 100px;
+}
+
+.top-footer>div>div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.top-footer div a {
+    text-decoration: none;
+    color: #ed6525;
+    margin-top: 20px;
+}
+
+.top-footer div a:hover {
+    text-decoration: underline;
+    color: #ed4025;
+}
+
+.top-footer div h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.top-footer div p {
+    text-align: center;
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+.top-footer div pre {
+    margin-right: 15px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.bottom-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.bottom-footer div {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.bottom-footer a {
+    text-decoration: none;
+    color: #ed6525;
+    font-size: 35px;
+    font-family: 'simple-line-icons';
+}
+.bottom-footer a:hover{
+    color:#ed4025 ;
+}
+
+.bottom-footer a:nth-child(1):before {
+    content: "\e609";
+}
+
+.bottom-footer a:nth-child(2):before {
+    content: "\e008";
+}
+
+.bottom-footer p {
+    margin-top: 30px;
+    color: #808080;
+}
+
+
+.site-info {
+    height: 24px;
+    background-color: #f0f0f0;
+    padding: 15px 0;
+    color: #808080;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#copy-right{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+}
+@media (max-width: 1024px){
+    .main-footer{
+        background-position: -400px 10px;
+        background-size: cover;
+        padding: 40px 20px 0 20px;
+        height: auto;
+    }
+    .top-footer {
+        flex-direction: column;
+    }
+    .top-footer div a,.top-footer div h2 {
+        text-align: center;
+
+    }
+    .top-footer div:nth-child(1) {
+        margin-bottom: 50px;
+    }
+    .top-footer div:nth-child(2) {
+        margin: 0;
+    }
+    .top-footer div pre {
+        align-self: center;
+        margin-bottom: 40px;
+    }
+    .top-footer img{
+        width: 70%;
+        align-self: center;
+        margin-bottom: 40px;
+    }
+    .site-info {
+        padding-right: 10px;
+        justify-content: start;
+        font-size: 14px;
+    }
+    #copy-right{
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        z-index: 10;
+        font-size: 10px;
+        font-weight: 700;
+        color: black;
+    }
+}
